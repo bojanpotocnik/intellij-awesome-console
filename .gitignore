@@ -1,6 +1,4 @@
 /out
 *.class
-*.jar
-
 .idea/workspace.xml
 /test/awesome/integration
