@@ -30,6 +30,9 @@ public class AwesomeLinkFilterTest extends CodeInsightFixtureTestCase {
 		assertPathDetection("Another file: ~/testme.txt", "~/testme.txt");
 	}
 
+
+
+
 	@Test
 	public void testFileContainingDotsWithoutDirectory() {
 		assertPathDetection("Just a file: t.es.t.txt", "t.es.t.txt");
@@ -94,6 +97,7 @@ public class AwesomeLinkFilterTest extends CodeInsightFixtureTestCase {
 		// Java exception stack trace
 		assertPathDetection("bla-bla at (AwesomeLinkFilter.java:150) something", "AwesomeLinkFilter.java:150", 150);
 	}
+
 
 	@Test
 	public void testFileWithRelativeDirectoryPythonExtensionAndLineNumberPlusColumn() {
@@ -178,6 +182,7 @@ public class AwesomeLinkFilterTest extends CodeInsightFixtureTestCase {
 
 		assertEquals("No matches in line \"" + line + "\"", 1, results.size());
 		FileLinkMatch info = results.get(0);
+
 		assertEquals(String.format("Expected filter to detect \"%s\" link in \"%s\"", expected, line), expected, info.match);
 
 		if (expectedRow >= 0)

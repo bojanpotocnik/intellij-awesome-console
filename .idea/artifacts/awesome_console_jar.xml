@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="awesome-console:jar">
+    <output-path>$USER_HOME$/.WebStorm2018.1/config/plugins/</output-path>
+    <root id="archive" name="awesome-console.jar">
+      <element id="module-output" name="awesome-console" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/plugin.xml" />
+      </element>
+    </root>
+  </artifact>
+</component>
