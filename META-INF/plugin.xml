@@ -1,9 +1,9 @@
-<idea-plugin url="https://github.com/anthraxx/intellij-awesome-console">
-	<name>Awesome Console</name>
+<idea-plugin url="https://github.com/kumorig/intellij-awesome-console">
+	<name>Awesome Console (tslint-fork)</name>
 	<version>0.2.1</version>
 	<id>awesome.console</id>
 	<vendor email="kumorig@gmail.com">...</vendor>
-	<description><![CDATA[	]]></description>
+	<description><![CDATA[Check https://github.com/anthraxx/intellij-awesome-console for original project, all credits to anthraxx,]]></description>
  <change-notes><![CDATA[	]]></change-notes>
 	<idea-version since-build="139.659"/>
 	<depends>com.intellij.modules.lang</depends>
