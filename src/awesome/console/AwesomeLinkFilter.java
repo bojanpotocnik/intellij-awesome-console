@@ -140,7 +140,7 @@ public class AwesomeLinkFilter implements Filter {
                 }
             }
 
-            // How heavy is this, I wonder?
+            // How heavy is this, I wonder? I don't know java but don't we need to dispose all those news?
             matchingFiles = new ArrayList<>( fileCache.get(path) );
 
             if (0 >= matchingFiles.size()) {
@@ -148,9 +148,11 @@ public class AwesomeLinkFilter implements Filter {
             }
 
             if (match.match.startsWith("./")) {
-                // We want a string that matches the files in match
+                // We want a path-string that looks like the ones in matchFiles...
+
                 // Removes everything after last ":" (Hopefully line col)
                 String relativePath = match.match.contains(":") ? match.match.substring(0, match.match.lastIndexOf(":")) : match.match;
+
                 // Once more should strip the line row
                 relativePath = relativePath.contains(":") ? relativePath.substring(0, relativePath.lastIndexOf(":")) : relativePath;
 
